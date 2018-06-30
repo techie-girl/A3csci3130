@@ -58,6 +58,11 @@ public class MainActivity extends Activity {
         startActivity(intent);
     }
 
+    public void updateDataButton(View v){
+        Intent intent=new Intent(this, DetailViewActivity.class);
+        startActivity(intent);
+
+    }
     private void showDetailView(Contact person)
     {
         Intent intent = new Intent(this, DetailViewActivity.class);
